@@ -1,6 +1,5 @@
 import React from 'react';
 import Logo from './img/byteCRM.png';
-//import HsLogo from './logoStyle/Logo';
 import Form from './Form/Form';
 import './Form/Style/style.scss';
 

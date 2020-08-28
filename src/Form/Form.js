@@ -1,17 +1,4 @@
 import React from 'react';
-// import PasswordView from './FormStyle/showPassword/showPassword';
-// import LoginBtn from './FormStyle/loginBtn/LoginBtn';
-// import CheckBox from './FormStyle/checkBox/CheckBox';
-// import {
-//   SignUp,
-//   LinkBtn,
-//   Form,
-//   Label,
-//   EmailInput,
-//   PwdInput,
-//   RememberMe,
-// } from './FormStyle/login';
-
 import './Style/style.scss';
 
 const initialState = {
@@ -68,9 +55,12 @@ class SignIn extends React.Component {
           </a>
         </p>
         <form className="loginForm" onSubmit={this.handleSubmit}>
-          <label className="laBel">Email address</label>
+          <label htmlFor="email" className="laBel">
+            Email address
+          </label>
           <input
             className="emailInput"
+            id="email"
             placeholder="Enter your email address..."
             name="email"
             type="email"
@@ -80,11 +70,14 @@ class SignIn extends React.Component {
           <div className="errMsg">{this.state.emailErrMsg}</div>
           <br />
 
-          <label className="laBel">Password</label>
+          <label htmlFor="password" className="laBel">
+            Password
+          </label>
           <br />
           <span className="pwdReveal">Show password</span>
           <input
             className="pwdInput"
+            id="password"
             type="password"
             name="password"
             placeholder="Enter your password..."
@@ -97,8 +90,10 @@ class SignIn extends React.Component {
           <a className="linkBtn" href="#">
             Forgot my password
           </a>
-          <input className="checkBox" type="checkbox" />
-          <span className="rememberMe">Remember Me</span>
+          <input id="rememberMe" className="checkBox" type="checkbox" />
+          <label htmlFor="rememberMe" className="rmbMe">
+            Remember Me
+          </label>
           <br />
           <button className="loginBtn" type="submit">
             Log in
