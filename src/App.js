@@ -1,13 +1,13 @@
 import React from 'react';
 import Logo from './img/byteCRM.png';
-import Form from './Form/Form';
-import './Form/Style/style.scss';
+import LoginForm from './pages/LoginForm/Form';
+import './pages/LoginForm/Style/style.scss';
 
 function App() {
   return (
     <div>
       <img className="byteCRMLogo" src={Logo} alt="" />
-      <Form />
+      <LoginForm />
     </div>
   );
 }

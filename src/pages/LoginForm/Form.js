@@ -1,4 +1,7 @@
 import React from 'react';
+import { BrowserRouter as Route, Link, Switch } from 'react-router-dom';
+import Register from '../RegForm/components/reg';
+
 import './Style/style.scss';
 
 const initialState = {
@@ -22,6 +25,7 @@ class SignIn extends React.Component {
   validate = () => {
     let emailErrMsg = ' ';
     let passwordErrMsg = ' ';
+
     if (!this.state.password) {
       passwordErrMsg = 'Password cannot be blank';
     }
@@ -45,14 +49,21 @@ class SignIn extends React.Component {
     }
   };
 
+  passwordRevealer = (value) => {
+    const [shown, hide] = React.useState(false);
+  };
   render() {
     return (
       <div>
         <p className="signUpPara">
           Don't have an account? &nbsp;
-          <a className="linkBtn" href="#">
+          <Link className="linkBtn" to="/register">
             Sign up
-          </a>
+          </Link>
+          <Switch>
+            <Route exact path="/" component={SignIn}></Route>
+            <Route path="/register" component={Register}></Route>
+          </Switch>
         </p>
         <form className="loginForm" onSubmit={this.handleSubmit}>
           <label htmlFor="email" className="laBel">
@@ -74,7 +85,7 @@ class SignIn extends React.Component {
             Password
           </label>
           <br />
-          <span className="pwdReveal">Show password</span>
+          <span className="pwdReveal">Show/Hide password</span>
           <input
             className="pwdInput"
             id="password"
@@ -103,9 +114,5 @@ class SignIn extends React.Component {
     );
   }
 }
-
-// const Formm = () => {
-//   return <div></div>;
-// };
 
 export default SignIn;
