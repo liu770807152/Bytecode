@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.scss';
 import Navbar from '../Navbar/Navbar';
-import Contactbasic from '../Contactbasic/Contactbasic';
+import Main from './Main';
 
 
 
@@ -11,7 +11,7 @@ function App() {
       <header>
         <Navbar />
       </header>
-      <Contactbasic />
+      <Main/>
       
     </div>
   )
