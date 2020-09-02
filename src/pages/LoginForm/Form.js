@@ -1,7 +1,8 @@
 import React from 'react';
+import Logo from '../../img/byteCRM.png';
 import { BrowserRouter as Route, Link, Switch } from 'react-router-dom';
-import Register from '../RegForm/components/reg';
-
+import { withRouter } from 'react-router';
+import Register from '../RegForm/reg';
 import './Style/style.scss';
 
 const initialState = {
@@ -33,6 +34,7 @@ class SignIn extends React.Component {
     if (!this.state.email.includes('.com')) {
       emailErrMsg = 'Invalid email address';
     }
+
     if (emailErrMsg || passwordErrMsg) {
       this.setState({ emailErrMsg, passwordErrMsg });
       return false;
@@ -49,20 +51,21 @@ class SignIn extends React.Component {
     }
   };
 
-  passwordRevealer = (value) => {
-    const [shown, hide] = React.useState(false);
-  };
+  // passwordRevealer = (value) => {
+  //   const [shown, hide] = React.useState(false);
+  // };
   render() {
     return (
       <div>
+        <img className="byteCRMLogo" src={Logo} alt="" />
         <p className="signUpPara">
           Don't have an account? &nbsp;
-          <Link className="linkBtn" to="/register">
+          <Link className="linkBtn" to="/reg">
             Sign up
           </Link>
           <Switch>
-            <Route exact path="/" component={SignIn}></Route>
-            <Route path="/register" component={Register}></Route>
+            <Route exact path="/" component={SignIn} />
+            <Route path="/reg" component={Register} />
           </Switch>
         </p>
         <form className="loginForm" onSubmit={this.handleSubmit}>
