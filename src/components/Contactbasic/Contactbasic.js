@@ -45,11 +45,6 @@ class Contactbasic extends Component {
         const { navItems, currentModal } = this.state;
         return (
             <div className="contact_information">
-                <div className="contact_basic">
-                    <button className="back-to-list">
-                        <div className="contact_text"> Contacts </div>
-                        <img className="icon_contact" src={IconContact} alt="Contact" />
-                    </button>
                     <ContactHeader />
                     <div className="activity__list">
                         <ActivityBar
@@ -58,7 +53,6 @@ class Contactbasic extends Component {
                             onNavItemClick={this.onNavItemClick}
                         />
                     </div>
-                </div>
                 <div className="about_contact">
                     <h3> About this contact</h3>
                     <div className="firstname_box">
