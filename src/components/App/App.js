@@ -3,6 +3,8 @@ import './App.scss';
 import Navbar from '../Navbar/Navbar';
 import Contactbasic from '../Contactbasic/Contactbasic';
 
+
+
 function App() {
   return (
     <div>
@@ -10,6 +12,7 @@ function App() {
         <Navbar />
       </header>
       <Contactbasic />
+      
     </div>
   )
 };

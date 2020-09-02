@@ -7,7 +7,9 @@ import IconLog from "../Contactbasic/icons64px/log.png";
 import IconTask from "../Contactbasic/icons64px/task.png";
 import IconMeeting from "../Contactbasic/icons64px/meeting.png";
 import IconContact from "../Contactbasic/icons64px/contact.png";
-import IconProfile from "../Contactbasic/icons64px/profile.png"
+import IconProfile from "../Contactbasic/icons64px/profile.png";
+import EmailWindow from '../Email/Email_Window/EmailWindow';
+
 
 
 const Contactbasic = () => (
@@ -49,6 +51,7 @@ const Contactbasic = () => (
                 </div>
             </div>
         </div>
+        
         <div className="about_contact">
             <h3> About this contact</h3>
             <div className="firstname_box">
@@ -94,6 +97,7 @@ const Contactbasic = () => (
             <h3> Website activity</h3>
             <p> Website activity shows you how many times a contact has visited your site and viewed your pages. </p>
         </div>
+       
     </div>
 );
 
