@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import './Modal.scss'
 import Draggable from 'react-draggable';
-import Header from './components/Header/Header';
-
-
+import Header from './components/Header/';
 
 
 class Modal extends Component {

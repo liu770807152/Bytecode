@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Modal from './Window/Modal';
+import Modal from '../Modal';
 import Contactbasic from '../Contactbasic';
-import './MainPage.scss';
+import './Main.scss';
 
 class Main extends Component {
     constructor(props) {
@@ -36,7 +36,7 @@ class Main extends Component {
         const {visible,currentModal} = this.state
         return (
             <div className="Main">
-                <Contact openModal = {this.openModal}
+                <Contactbasic openModal = {this.openModal}
                 />
 
                 <div className="Function">

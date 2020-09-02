@@ -1,0 +1,30 @@
+.activity{
+    display:flex;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        padding-left:3px;
+        padding-right:3px;
+    }
+
+    &__name {
+        font-size: 10px;
+        margin: 10px;
+    }
+    &__icon{
+        width:25px;
+        height:25px;
+        margin: 5px;
+        
+    }
+    
+    &__button{
+        border : none;
+        border-radius : 50%;
+        cursor: pointer;
+    }
+}
+
+
+

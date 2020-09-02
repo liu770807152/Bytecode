@@ -25,13 +25,7 @@
     width: 20px;
 }
 
-.contact_header {
-    justify-self: center;
-    width: 150px;
-    margin:40px 80px;
-    left: 10px;
-    position: relative;
-}
+
 
 .profile_icon {
     margin: 10px 45px;
@@ -48,32 +42,9 @@
 }
 
 
-.icon_button{
-    margin : 5px;
-    border : none;
-    border-radius : 50%;
-    cursor: pointer;
-}
-
-.activity_list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-    margin:10px;
-}
-
-.activity_item {
-    display: flex;
-    flex-direction: column;
-}
-
-.activity_name {
-    font-size: 10px;
-    margin: 10px;
-}
 
 .icon_note , .icon_mail, .icon_call, .icon_log, .icon_task, .icon_meeting{
-    width: 25px;
+    width: 15px;
 }
 
 .about_contact {
