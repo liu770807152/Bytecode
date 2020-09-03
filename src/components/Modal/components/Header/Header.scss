@@ -15,7 +15,7 @@
              align-items: center;
              flex:4;
              height:100%;
-             vertical-align: middle;
+            
            
             
              &__Icon{
@@ -25,7 +25,8 @@
                       font-size: medium;
                       font-weight: 700;
                       color:white;
-                      padding-left: 0.3rem;                 
+                      padding-left: 0.3rem; 
+                      padding-bottom:0.2rem;                
                     }       
             } 
 
