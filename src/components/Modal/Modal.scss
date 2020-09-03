@@ -1,10 +1,13 @@
 .Modal{
+   display: inline-block;
    position:absolute;
    visibility: hidden;
-   width:40%;
-   height:50%;
+   width:45%;
+   height:35%;
+   top: 3%;
+   left: 10%;
    background-color: transparent;
-   
+   border: solid 1px;
 }
 
 .MainComponents{
@@ -21,7 +24,7 @@
 
 
 @media screen and (max-width: 1024px) {
-	.Weather {
+	.Modal {
 		width: 50%;
 		min-width: 350px;
 		margin-top: 50px;
