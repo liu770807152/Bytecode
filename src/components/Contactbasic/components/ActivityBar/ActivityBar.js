@@ -8,7 +8,7 @@ const ActivityBar = ({
     onNavItemClick,
     currentModal,
   }) => (
-    <nav className="activity__list">
+    <nav className="activity__Bar">
       {navItems.map((item) => (
         <ActivityItem 
           name ={item.value}

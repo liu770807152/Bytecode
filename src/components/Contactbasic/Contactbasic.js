@@ -6,7 +6,6 @@ import IconCall from "../../img/Contact/call.png";
 import IconLog from "../../img/Contact/log.png";
 import IconTask from "../../img/Contact/task.png";
 import IconMeeting from "../../img/Contact/meeting.png";
-import IconContact from "../../img/Contact/contact.png";
 import ContactHeader from "./components/ContactHeader/"
 import ActivityBar from "./components/ActivityBar/ActivityBar"
 import NoteModal from "../Modal/components/Function/Note_Modal"
@@ -28,7 +27,7 @@ class Contactbasic extends Component {
         this.state = {
             navItems,
             currentModal: navItems[0],
-            name: "email",
+            
         }
         this.onNavItemClick = this.onNavItemClick.bind(this);
     }
@@ -45,14 +44,14 @@ class Contactbasic extends Component {
         const { navItems, currentModal } = this.state;
         return (
             <div className="contact_information">
-                    <ContactHeader />
-                    <div className="activity__list">
-                        <ActivityBar
-                            navItems={navItems}
-                            currentWindow={currentModal}
-                            onNavItemClick={this.onNavItemClick}
-                        />
-                    </div>
+                <ContactHeader />
+
+                <ActivityBar
+                    navItems={navItems}
+                    currentWindow={currentModal}
+                    onNavItemClick={this.onNavItemClick}
+                />
+
                 <div className="about_contact">
                     <h3> About this contact</h3>
                     <div className="firstname_box">
