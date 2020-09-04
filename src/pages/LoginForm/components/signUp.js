@@ -1,5 +1,11 @@
 import React from 'react';
-import { BrowserRouter as Route, Link, Switch } from 'react-router-dom';
+import {
+  BrowserRouter as Route,
+  Link,
+  Switch,
+  HashRouter,
+  Router,
+} from 'react-router-dom';
 import Register from '../../RegForm/reg';
 import SignIn from '../index';
 
@@ -13,10 +19,13 @@ const ToSignUpPage = () => {
         </Link>
         <Switch>
           <Route exact path="/" component={SignIn} />
-          <Route path="/reg" component={Register} />
+          <Route path="/reg">
+            <Register />
+          </Route>
         </Switch>
       </p>
     </div>
   );
 };
+
 export default ToSignUpPage;
