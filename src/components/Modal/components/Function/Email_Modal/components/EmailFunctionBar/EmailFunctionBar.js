@@ -8,10 +8,10 @@ const EmailFunctionBar = ({
     items,
     onItemClick,
 }) => (
-        <nav className="EmailFunctionBar">
+        <nav className="emailFunctionBar">
             {items.map((item) => (
-                <div className = "FunctionBar_Item">
-                    <Text className="FunctionBar_Item_Text"
+                <div className = "functionBar_Item">
+                    <Text className="functionBar_Item_Text"
                     // onClick={() => onItemClick()}
                     >
                         {item.value}

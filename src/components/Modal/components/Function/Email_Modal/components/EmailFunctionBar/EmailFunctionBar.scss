@@ -1,13 +1,18 @@
-.EmailFunctionBar{
+.emailFunctionBar{
     display: flex;
+    flex:1;
     justify-content: flex-start;
     border-bottom: solid 1px gray;
 }
 
-.FunctionBar_Item{
-    padding: 3%;
+.functionBar_Item{
+    margin:3% 1%;
+
+    &:hover{
+        cursor: pointer;
+    }
 }
 
-.FunctionBar_Item_Text{
+.functionBar_Item_Text{
     font-size: small;
 }

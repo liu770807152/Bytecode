@@ -1,0 +1,12 @@
+.emailHeader{
+    //background-color: grey;
+    display:flex;
+    flex-direction: column;
+    flex:1;
+}
+
+.header_item{
+    flex:1;
+    justify-content: flex-start;
+    margin: 1% 1%;
+}
