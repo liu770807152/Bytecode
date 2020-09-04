@@ -7,6 +7,7 @@
         flex-direction: column;
         margin: auto 2%;
         
+        
     }
 
     &__name {
@@ -17,12 +18,19 @@
     &__icon{
         width:20px;
         height:20px;
+        
     }
     
     &__button{
         border : solid 1px $primary-color;
         border-radius : 50%;
         cursor: pointer;
+
+       &：hover{
+        cursor: pointer;
+       }
+
+       
         
     }
 }

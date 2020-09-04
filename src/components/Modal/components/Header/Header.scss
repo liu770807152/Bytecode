@@ -7,7 +7,7 @@
     background-image: linear-gradient(-303deg,#00a4bd,#00afb2 56%,#00bda5);
     width: 100%; 
     cursor: grab;
-    height:9%;
+    height:50px;
     border-radius:5px 5px 0px 0px;
     // border:solid 1px;
       
@@ -16,18 +16,14 @@
              align-items: center;
              flex:4;
              height:100%;
-            
+             padding-left: 1%;     
            
-            
-             &__Icon{
-                      padding-left: 0.3rem;                         
-             }
              &__Name{
                       font-size: medium;
                       font-weight: 700;
                       color:white;
-                      padding-left: 0.3rem; 
-                      padding-bottom:0.2rem;                
+                      padding-left: 2%;    
+                      padding-bottom: 1%;                
                     }       
             } 
 
@@ -37,10 +33,9 @@
         flex:1;
         align-items: center;
         justify-content: flex-end;
+        padding-right: 2%;     
 
-        &__Icon{   
-            padding-right: 0.3rem;     
-        }
+       
      }         
 }
 
@@ -48,9 +43,10 @@
     border:0;
     outline: 0;
     background-color: transparent;
-    border-radius: 50%;  
+    border-radius: 50%; 
+
     &:hover{
-        background-color: darken($Secondary-color,8%);
+        background-color: darken($Secondary-color,8%);      
         cursor: pointer;
     }
 }

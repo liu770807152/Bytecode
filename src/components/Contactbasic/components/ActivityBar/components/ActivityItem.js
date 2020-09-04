@@ -5,7 +5,6 @@ import './ActivityItem.scss';
 const ActivityItem = ({
     name,
     src,
-    active,
     onClick,
     children
 }) => {
@@ -15,9 +14,7 @@ const ActivityItem = ({
     let ActivityNameClassName = 'activity__name';
 
 
-    if (active) {
-        itemClassName += ' activity__item--active';
-    }
+    
 
     return (
         <div className={itemClassName}>
