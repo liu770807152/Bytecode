@@ -1,12 +1,14 @@
+@import "../../../../../../../style/variable.scss";
 .emailFunctionBar{
     display: flex;
     flex:1;
     justify-content: flex-start;
-    border-bottom: solid 1px gray;
+    
 }
 
+
 .functionBar_Item{
-    margin:3% 1%;
+    margin:3% 2.5%;
 
     &:hover{
         cursor: pointer;

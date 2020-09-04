@@ -5,15 +5,19 @@ import HeaderItem from './components/HeaderItem';
 
 const EmailHeader = () => (
     <div className="emailHeader">
-        <div className="header_item header_item_to">
-            <HeaderItem> To</HeaderItem>
+        <div className="emailHeader__blank"/>
+        <div className="emailHeader__main">
+            <div className="emailHeader__main__item emailHeader__main__to">
+                <HeaderItem> To</HeaderItem>
+            </div>
+            <div className="emailHeader__main__item emailHeader__main__from border-bottom">
+                <HeaderItem> From</HeaderItem>
+            </div>
+            <div className="emailHeader__main__item emailHeader__main__subject border-bottom">
+                <HeaderItem> Subject</HeaderItem>
+            </div>
         </div>
-        <div className="header_item header_item_from">
-            <HeaderItem> From</HeaderItem>
-        </div>
-        <div className="header_item header_item_subject">
-            <HeaderItem> Subject</HeaderItem>
-        </div>
+        <div className="emailHeader__blank" />
     </div>
 )
 

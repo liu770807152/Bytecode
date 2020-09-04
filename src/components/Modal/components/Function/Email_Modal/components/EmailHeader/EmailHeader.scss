@@ -1,9 +1,31 @@
 .emailHeader{
-    //background-color: grey;
+    background-color: white;
     display:flex;
-    flex-direction: column;
     flex:1;
+
+    &__blank{
+        flex:1;
+       
+       
+       
+    }
+
+    &__main{
+        flex:35;
+        justify-content: flex-start;  
+       
+        &__item{
+            margin:3% auto;
+        }
+        &__to{
+            margin:2% auto;
+        }
+      
+        
+
+    }
 }
+
 
 .header_item{
     flex:1;

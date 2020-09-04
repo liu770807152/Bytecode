@@ -8,7 +8,7 @@ const EmailFunctionBar = ({
     items,
     onItemClick,
 }) => (
-        <nav className="emailFunctionBar">
+        <nav className="emailFunctionBar border-bottom">
             {items.map((item) => (
                 <div className = "functionBar_Item">
                     <Text className="functionBar_Item_Text"
