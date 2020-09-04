@@ -1,0 +1,116 @@
+.company_information {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    padding: 0px 10px;
+}
+
+.back-to-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 2px solid rgb(128, 128, 128);
+    margin: 10px 0px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.company_text {
+    text-align: center;
+    line-height: 20px;
+}
+
+.icon_company {
+    width: 30px;
+}
+
+.company_header {
+    // justify-self: center;
+    // width: 150px;
+    // margin: 40px 80px;
+    // left: 10px;
+    position: relative;
+}
+
+.profile_icon {
+    width: 80px;
+    background-color: black;
+    border-radius: 50%;
+    overflow: hidden;
+    img {
+        width: 100%;
+    }
+}
+
+.company_name {
+    text-align: center;
+    font-size: 25px;
+}
+
+.company_link {
+    text-align: center;
+}
+
+.company_position {
+    margin: 10px;
+}
+
+.activity_list {
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: left;
+    // margin: 10px;
+    .activity_item {
+        // display: flex;
+        // flex-direction: column;
+        .icon_button {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            margin: 0px, 5px;
+        }
+        .activity_name {
+            font-size: 10px;
+            // margin: 10px;
+        }
+    }
+}
+
+// .icon_note,
+// .icon_mail,
+// .icon_call,
+// .icon_log,
+// .icon_task,
+// .icon_meeting {
+//     width: 25px;
+// }
+
+.about_company {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.key_name {
+    font-size: 15px;
+    margin: 15px 0px;
+}
+
+.value_name {
+    font-size: 10px;
+    margin: 15px 0px;
+    text-decoration-line: underline;
+}
+
+.view-all-properties {
+    margin: 10px 35px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.view-property-history {
+    margin: 10px 35px;
+    width: 200px;
+    border-radius: 5px;
+}
