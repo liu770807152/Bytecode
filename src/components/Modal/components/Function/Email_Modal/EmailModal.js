@@ -7,8 +7,8 @@ class EmailModal extends React.Component {
   constructor(props) {
     super(props);
     const items = [
-      { key: 'templates', value: 'templates' },
-      { key: 'sequences', value: 'sequences' },
+      { key: 'Templates', value: 'Templates' },
+      { key: 'Sequences', value: 'Sequences' },
       { key: 'Documents', value: 'Documents' },
       { key: 'Meetings', value: 'Meetings' },
       { key: 'Quotes', value: 'Quotes' },
