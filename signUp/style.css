@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.logo {
+  width: 19rem;
+  height: 7rem;
+  margin-top: 3%;
+  margin-left: 37%;
+  position: relative;
+}
+
+.formContainer {
+  margin-left: 36%;
+  width: 20rem;
+  height: 30rem;
+  border: solid 1.5px #0091ae;
+  border-radius: 20px;
+  background-color: #f5f8fa;
+  -webkit-box-shadow: 4px 11px 12px -1px rgba(195, 197, 199, 1);
+  -moz-box-shadow: 4px 11px 12px -1px rgba(195, 197, 199, 1);
+  box-shadow: 4px 11px 12px -1px rgba(195, 197, 199, 1);
+  position: relative;
+}
+
+.signUpForm {
+  margin-left: 1em;
+}
+
+.asking {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #33475b;
+  margin-left: 10%;
+}
+
+.signInLink {
+  text-decoration: none;
+  color: #0091ae;
+}
+
+.signInLink:hover {
+  color: #33475b;
+  font-weight: 600;
+}
+
+h3 {
+  color: #33475b;
+  margin-bottom: -1%;
+}
+
+.slogan {
+  color: #33475b;
+  font-size: 0.5rem;
+  font-weight: 400;
+}
+
+.googleSignUpWrapper {
+  border: solid 0.5px #5886d4;
+  width: 18rem;
+  margin-top: 2%;
+  border-top-left-radius: 0.1875rem;
+  border-top-right-radius: 0.1875rem;
+  border-bottom-right-radius: 0.1875rem;
+  border-bottom-left-radius: 0.1875rem;
+}
+
+.googleIcon {
+  width: 28px;
+  height: 28px;
+  vertical-align: middle;
+}
+
+.googleSignUpBtn {
+  width: 15.96rem;
+  height: 2rem;
+  border: none;
+  background-color: #4285f4;
+  font-family: 'Varela Round', sans-serif;
+  color: #ffff;
+  cursor: pointer;
+}
+
+.googleSignUpBtn:hover {
+  background-color: #5886d4;
+}
+
+hr {
+  width: 70%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.inputLabel {
+  color: #0091ae;
+}
+
+.firstNameInput,
+.lastNameInput,
+.emailInput,
+.pwdInput {
+  padding: 4.5px 5px;
+  border-radius: 3px;
+  border: 1px solid #cbd6e2;
+  font-size: 14px;
+  transition: all 0.15s ease-out;
+  transition-property: all;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-out;
+  transition-delay: 0s;
+  background-color: #f5f8fa;
+  color: #0091ae;
+  display: block;
+  line-height: 22px;
+  text-align: left;
+  height: 1rem;
+  width: 16rem;
+  position: relative;
+  display: flex;
+}
+
+.submitBtn {
+  font-family: 'Varela Round', sans-serif;
+  font-weight: 600;
+  border-radius: 3px;
+  border-style: solid;
+  width: 13rem;
+  height: 2rem;
+  margin-left: 10%;
+  color: #fff;
+  background-color: #ff7a59;
+  border-color: #ff7a59;
+  line-height: 16px;
+  cursor: pointer;
+  position: relative;
+  vertical-align: middle;
+}

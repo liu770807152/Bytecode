@@ -1,9 +1,4 @@
 import React from 'react';
-import Logo from '../../img/byteCRM.png';
-import { BrowserRouter as Route, Link, Switch } from 'react-router-dom';
-import { withRouter } from 'react-router';
-import Register from '../RegForm/reg';
-import './Style/style.scss';
 
 const initialState = {
   emailAddr: '',
@@ -12,7 +7,7 @@ const initialState = {
   passwordErrMsg: '',
 };
 
-class SignIn extends React.Component {
+class Form extends React.Component {
   state = initialState;
   handleChange = (event) => {
     const isCheckbox = event.target.type === 'checkbox';
@@ -49,25 +44,15 @@ class SignIn extends React.Component {
       console.log(this.state);
       this.setState(initialState);
     }
+
+    // passwordRevealer = (value) => {
+    //   const [shown, hide] = React.useState(false);
+    // };
   };
 
-  // passwordRevealer = (value) => {
-  //   const [shown, hide] = React.useState(false);
-  // };
   render() {
     return (
       <div>
-        <img className="byteCRMLogo" src={Logo} alt="" />
-        <p className="signUpPara">
-          Don't have an account? &nbsp;
-          <Link className="linkBtn" to="/reg">
-            Sign up
-          </Link>
-          <Switch>
-            <Route exact path="/" component={SignIn} />
-            <Route path="/reg" component={Register} />
-          </Switch>
-        </p>
         <form className="loginForm" onSubmit={this.handleSubmit}>
           <label htmlFor="email" className="laBel">
             Email address
@@ -117,5 +102,4 @@ class SignIn extends React.Component {
     );
   }
 }
-
-export default SignIn;
+export default Form;

@@ -1,0 +1,28 @@
+.logCall {
+  background-color: #eaf0f6;
+  border: solid 1px #cbd6e2;
+  border-radius: 5px;
+  height: 2rem;
+  width: 5rem;
+  color: #506e91;
+  cursor: pointer;
+}
+
+.phoneCall {
+  background-color: #425b76;
+  border: solid 1px #425b76;
+  border-radius: 5px;
+  height: 2rem;
+  width: 9rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+p {
+  color: #33475b;
+}
+
+a {
+  color: #0091ae;
+  font-weight: 600;
+}
