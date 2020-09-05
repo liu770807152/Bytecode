@@ -1,13 +1,5 @@
 import React from 'react';
-import {
-  BrowserRouter as Route,
-  Link,
-  Switch,
-  HashRouter,
-  Router,
-} from 'react-router-dom';
-import Register from '../../RegForm/reg';
-import SignIn from '../index';
+import { Link } from 'react-router-dom';
 
 const ToSignUpPage = () => {
   return (
@@ -17,12 +9,6 @@ const ToSignUpPage = () => {
         <Link className="linkBtn" to="/reg">
           Sign up
         </Link>
-        <Switch>
-          <Route exact path="/" component={SignIn} />
-          <Route path="/reg">
-            <Register />
-          </Route>
-        </Switch>
       </p>
     </div>
   );

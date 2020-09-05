@@ -83,10 +83,11 @@ $myFont: 'Varela Round', sans-serif;
 .errMsg {
   color: red;
   font: {
-    size: 10;
+    size: 13px;
     family: $myFont;
     weight: 600;
   }
+  margin-top: -2%;
 }
 
 .pwdReveal {

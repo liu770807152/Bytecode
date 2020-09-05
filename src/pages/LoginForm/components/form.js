@@ -5,10 +5,17 @@ const initialState = {
   password: '',
   emailErrMsg: '',
   passwordErrMsg: '',
+  hidden: true,
 };
 
 class Form extends React.Component {
   state = initialState;
+  //Toggle Password -> Show or Hide
+  toggleShow = this.toggleShow.bind(this);
+  toggleShow() {
+    this.setState({ hidden: !this.state.hidden });
+  }
+
   handleChange = (event) => {
     const isCheckbox = event.target.type === 'checkbox';
     this.setState({
@@ -23,11 +30,11 @@ class Form extends React.Component {
     let passwordErrMsg = ' ';
 
     if (!this.state.password) {
-      passwordErrMsg = 'Password cannot be blank';
+      passwordErrMsg = 'Password cannot be blank !';
     }
 
     if (!this.state.email.includes('.com')) {
-      emailErrMsg = 'Invalid email address';
+      emailErrMsg = 'Invalid email address !';
     }
 
     if (emailErrMsg || passwordErrMsg) {
@@ -44,10 +51,6 @@ class Form extends React.Component {
       console.log(this.state);
       this.setState(initialState);
     }
-
-    // passwordRevealer = (value) => {
-    //   const [shown, hide] = React.useState(false);
-    // };
   };
 
   render() {
@@ -68,16 +71,17 @@ class Form extends React.Component {
           />
           <div className="errMsg">{this.state.emailErrMsg}</div>
           <br />
-
           <label htmlFor="password" className="laBel">
             Password
           </label>
           <br />
-          <span className="pwdReveal">Show/Hide password</span>
+          <span onClick={this.toggleShow} className="pwdReveal">
+            Show/Hide password
+          </span>
           <input
             className="pwdInput"
             id="password"
-            type="password"
+            type={this.state.hidden ? 'password' : 'text'}
             name="password"
             placeholder="Enter your password..."
             value={this.state.password}
