@@ -68,7 +68,7 @@ class Modal extends Component {
                         }
                     </div>
                     :
-                    <div />
+                    <div className ="Modal"/>
                 }
             </Draggable>
 

@@ -4,13 +4,24 @@ import "./HeaderItem.scss";
 
 
 const HeaderItems = ({
-    children
+    children,
+    borderBottom,
+    value
 }) => {
-    return(
-        <span className="header_text">{children}</span>
+    let className = "emailHeader__main__item";
+    if (borderBottom) {
+        className += " border-bottom";
+    }
+    return (
+        <div className={className}>
+            <div className="title">
+                <span className="title__name">{value}</span>
+            </div>
+            {children}
+        </div>
     )
 }
-   
+
 
 
 export default HeaderItems;

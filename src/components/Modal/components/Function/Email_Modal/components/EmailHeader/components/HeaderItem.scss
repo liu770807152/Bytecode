@@ -1,7 +1,14 @@
 @import "../../../../../../../../style/variable.scss";
 
-.header_text{
-  color: $primary-color;
-  font-size: small;
 
+
+.title{
+    
+    justify-content: flex-start;
+
+    &__name{
+        color: $primary-color;
+        font-size: small;
+        font-weight: 600;
+    }
 }

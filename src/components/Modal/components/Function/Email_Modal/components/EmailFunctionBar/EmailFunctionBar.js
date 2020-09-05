@@ -1,6 +1,7 @@
 import React from 'react';
 import Text from '../../../../../../Style/Text'
 import "./EmailFunctionBar.scss"
+import EmailFunctionBarItem from './components/EmailFunctionBarItem'
 
 
 
@@ -10,14 +11,11 @@ const EmailFunctionBar = ({
 }) => (
         <nav className="emailFunctionBar border-bottom">
             {items.map((item) => (
-                <div className = "functionBar_Item">
-                    <Text className="functionBar_Item_Text"
-                    // onClick={() => onItemClick()}
-                    >
-                        {item.value}
-                    </Text>
-                </div>
-
+                <EmailFunctionBarItem
+                    key={item.key}
+                >
+                    {item.value}
+                </EmailFunctionBarItem>
             ))}
         </nav>
     );

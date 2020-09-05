@@ -4,21 +4,37 @@ import HeaderItem from './components/HeaderItem';
 
 
 const EmailHeader = () => (
-    <div className="emailHeader">
-        <div className="emailHeader__blank"/>
-        <div className="emailHeader__main">
-            <div className="emailHeader__main__item emailHeader__main__to">
-                <HeaderItem> To</HeaderItem>
+    <React.Fragment>
+        <div className="emailHeader">
+            <div className="emailHeader__blank" />
+            <div className="emailHeader__main">
+                <HeaderItem value={"To"}
+                    borderBottom={false}
+                >
+                    <div className="item-content receiver">
+                        <span className="receiver__name">John 1111111 Wick</span>
+                    </div>
+                </HeaderItem>
+                <HeaderItem
+                    value={"From"}
+                    borderBottom={true}
+                >
+                     <div className="item-content sender">
+                        <span>abc</span>
+                    </div>
+                </HeaderItem>
+                <HeaderItem
+                    value={"Subject"}
+                    borderBottom={true}
+                >
+                     <div className="item-content subject">
+                        <span>abc</span>
+                    </div>
+                </HeaderItem>
             </div>
-            <div className="emailHeader__main__item emailHeader__main__from border-bottom">
-                <HeaderItem> From</HeaderItem>
-            </div>
-            <div className="emailHeader__main__item emailHeader__main__subject border-bottom">
-                <HeaderItem> Subject</HeaderItem>
-            </div>
+            <div className="emailHeader__blank" />
         </div>
-        <div className="emailHeader__blank" />
-    </div>
+    </React.Fragment>
 )
 
 export default EmailHeader;
