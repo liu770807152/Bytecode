@@ -14,10 +14,10 @@ const HeaderItems = ({
     }
     return (
         <div className={className}>
-            <div className="title">
+            <div className={"title"}>
                 <span className="title__name">{value}</span>
             </div>
-            <div className="emailHeader__main__item__right">
+            <div className="emailHeader__main__item__right ">
                 {children}
             </div>
 
