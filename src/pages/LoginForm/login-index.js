@@ -4,6 +4,7 @@ import LoginForm from './components/form';
 import ToSignUp from './components/signUp';
 import './Style/style.scss';
 import Register from '../RegForm/reg-index';
+import Calls from '../../calls/call';
 import { Route, Switch } from 'react-router-dom';
 
 class SignIn extends React.Component {
@@ -19,6 +20,10 @@ class SignIn extends React.Component {
 
           <Route path="/reg">
             <Register />
+          </Route>
+
+          <Route path="/call">
+            <Calls />
           </Route>
         </Switch>
       </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const initialState = {
   emailAddr: '',
@@ -56,6 +57,7 @@ class Form extends React.Component {
   render() {
     return (
       <div>
+        <Link to="/call">hello world</Link>
         <form className="loginForm" onSubmit={this.handleSubmit}>
           <label htmlFor="email" className="laBel">
             Email address

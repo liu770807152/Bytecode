@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+$call-myFont: 'Varela Round', sans-serif;
+
+#draggable-dialog-title {
+  font-family: $call-myFont;
+  background-color: #506e91;
+  color: #fff;
+}
