@@ -17,7 +17,10 @@ const HeaderItems = ({
             <div className="title">
                 <span className="title__name">{value}</span>
             </div>
-            {children}
+            <div className="emailHeader__main__item__right">
+                {children}
+            </div>
+
         </div>
     )
 }

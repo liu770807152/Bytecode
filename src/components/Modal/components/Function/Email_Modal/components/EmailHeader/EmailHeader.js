@@ -15,6 +15,15 @@ const EmailHeader = () => (
                     borderBottom={false}
                 >
                     <ReceiverTag>John 11111 Wick</ReceiverTag>
+                    <ReceiverTag>John 11111 Wick</ReceiverTag>
+                    <ReceiverTag>John 11111 Wick</ReceiverTag>
+                    <ReceiverTag>John 11111 Wick</ReceiverTag>
+                    <ReceiverTag>John 11111 Wick</ReceiverTag>
+                    <ReceiverTag>John 11111 Wick</ReceiverTag>
+                    <ReceiverTag>John 11111 Wick</ReceiverTag>
+                    <ReceiverTag>John 11111 Wick</ReceiverTag>
+                    <ReceiverTag>John 11111 Wick</ReceiverTag>
+                    <ReceiverTag>John 11111 Wick</ReceiverTag>
                 </HeaderItem>
                 <HeaderItem
                     value={"From"}

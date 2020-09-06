@@ -18,15 +18,23 @@
         &__item{
             display: flex;
             margin:3% auto;
-            flex-direction: row;   
+           
+
+            &__right{
+                display: flex;
+                flex-wrap: wrap;
+            }      
         }
        
     }
 }
 
 .item-content{
+    
     justify-content: flex-start;
-    margin:auto 5%;
+    margin-left: 0.8rem;
+    margin-bottom: 0.4rem;
+    
 }
 
 
