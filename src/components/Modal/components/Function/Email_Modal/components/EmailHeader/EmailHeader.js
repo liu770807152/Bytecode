@@ -12,7 +12,7 @@ const EmailHeader = () => (
                     borderBottom={false}
                 >
                     <div className="item-content receiver">
-                        <span className="receiver__name">John 1111111 Wick</span>
+                        <span className="receiver__nameTag">John 1111111 Wick</span>
                     </div>
                 </HeaderItem>
                 <HeaderItem
