@@ -4,6 +4,7 @@ import EmailFunctionBar from "./components/EmailFunctionBar";
 import Text from '../../../../Style/Text';
 import EmailHeader from './components/EmailHeader';
 import EmailInput from './components/EmailInput';
+import EmailSendBar from './components/EmailSend';
 
 class EmailModal extends React.Component {
   constructor(props) {
@@ -30,6 +31,7 @@ class EmailModal extends React.Component {
         />
         <EmailHeader />
         <EmailInput/>
+        <EmailSendBar/>
       </div>
     );
   }

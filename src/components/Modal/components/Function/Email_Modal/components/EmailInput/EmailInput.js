@@ -10,7 +10,7 @@ const EmailInput=({
         <p>input</p>
         <p>input</p>
         <p>input</p>
-       
+        <p>input</p>
     </div>
    
 

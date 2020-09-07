@@ -1,0 +1,24 @@
+@import '../../../style/variable.scss';
+
+.containedButton{
+    border: 0;
+    outline: 0;
+    background-color: $tertiary-color;
+    height:30px;
+    width: 60px;
+    border-radius: 3px;
+    color:white;
+    font-size:small;
+}
+
+.outlinedButton{
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    height:30px;
+    width: 80px;
+    border-radius: 3px;
+    color:$tertiary-color;
+    font-size:small;
+    border:solid 1px $tertiary-color;
+}

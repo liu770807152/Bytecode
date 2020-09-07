@@ -10,7 +10,7 @@ class Modal extends Component {
         this.state = {
             fullScreen: false,
             defaultXaxis: 500,
-            defaultYaxis: 200,
+            defaultYaxis: 100,
             hide: false,
 
         };

@@ -8,7 +8,7 @@ class Main extends Component {
         super(props);
         this.state = {
             Xaxis:500,
-            Yaxis:200,
+            Yaxis:100,
             visible:false,
             currentModal: "",
         }
@@ -38,7 +38,6 @@ class Main extends Component {
             <div className="Main">
                 <Contactbasic openModal = {this.openModal}
                 />
-
                 <div className="Function">
                     <p>function component</p>
                 </div>
