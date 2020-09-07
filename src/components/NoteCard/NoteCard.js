@@ -12,9 +12,26 @@ class NoteCard extends React.Component {
 	constructor(props) {
     super(props);
     this.state = {
-      open: false
-    }
+			isAccordionExpand: false,
+			isAddCommentOn: false
+		};
+		this.handleAccordionClick = this.handleAccordionClick.bind(this);
+		this.handleAddCommentClick = this.handleAddCommentClick.bind(this);
 	}
+
+	handleAccordionClick() {
+		this.setState(prevState =>({
+			isAccordionExpand: !prevState.isAccordionExpand
+		}));
+	}
+
+	
+	handleAddCommentClick() {
+    this.setState(prevState => ({
+      isAddCommentOn: !prevState.isAddCommentOn
+    }));
+  }
+
 	
 	render() {
 		return (
@@ -31,10 +48,10 @@ class NoteCard extends React.Component {
 					<CreatedBy />
 				</div>
 				<div className="note-body">
-					<div onClick={function(){this.setState({open:!this.state.open})}.bind(this)}> 
+					<div onClick={this.handleAccordionClick}> 
 						<Accordion commentnumber="1"></Accordion>
 					</div>
-					<div className={this.state.open ? "accordion-collapse" : "accordion-collapse accordion-close"}>
+					<div className={this.state.isAccordionExpand ? "accordion-collapse" : "accordion-collapse accordion-close"}>
 						<CommentCard 
 							firstname="Joe"
 							lastname="Doe"
@@ -43,12 +60,10 @@ class NoteCard extends React.Component {
 						/>
 					</div>
 				</div>
-				<div className={this.state.open ? "accordion-collapse" : "accordion-collapse accordion-close"}>
+				<div className={this.state.isAddCommentOn ? "accordion-collapse" : "accordion-collapse accordion-close"}>
 					<NewComment />
 				</div>
-				<div 
-					onClick={function(){this.setState({open:!this.state.open})}.bind(this)}
-				>
+				<div onClick={this.handleAddCommentClick}>
 					<NoteCardFooter />
 				</div>
 			</div>

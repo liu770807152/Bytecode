@@ -1,7 +1,7 @@
 import React from "react";
 import './NoteModal.scss';
 import RichTextInput from "../NoteCard/components/RichTextInput";
-import Draggable from 'react-draggable';
+
 
 class NoteModal extends React.Component {
 	constructor(props) {
@@ -13,7 +13,7 @@ class NoteModal extends React.Component {
 
 	render() {
 		return (
-			<Draggable>
+			<div>
 				<div className="note-card-container">
 					<div className="new-note-text-input">
 						<RichTextInput 
@@ -26,7 +26,7 @@ class NoteModal extends React.Component {
 						<p>Create a task to follow up</p>
 					</div>
 				</div>
-			</Draggable>
+			</div>
 		);
 	}
 }

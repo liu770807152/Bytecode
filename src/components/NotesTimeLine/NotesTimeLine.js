@@ -3,6 +3,7 @@ import './NotesTimeLine.scss';
 import NoteModal from '../NoteModal';
 import NoteCard from '../NoteCard';
 import Modal from 'react-modal';
+import Draggable from 'react-draggable';
 
 class NotesTimeLine extends React.Component {
 	constructor () {
@@ -29,15 +30,19 @@ class NotesTimeLine extends React.Component {
 				<div>
 					<button onClick={this.handleOpenModal}>Create Note</button>
 				</div>
-				<Modal
-					className="note-modal"
-          isOpen={this.state.showModal}
-        >
-					<div className="note-modal__header">
-						<button  onClick={this.handleCloseModal}>Close</button>
-						<NoteModal />
-					</div>
-        </Modal>
+					<Modal
+						className="note-modal"
+						isOpen={this.state.showModal}
+					>
+						<Draggable>
+							<div>
+								<div className="note-modal__header">
+									<button onClick={this.handleCloseModal}>Close</button>
+								</div>
+								<NoteModal />
+							</div>
+						</Draggable>
+					</Modal>
 				<NoteCard />
 			</div>
 		);
