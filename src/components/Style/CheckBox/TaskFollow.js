@@ -1,12 +1,9 @@
 import React from 'react';
 import Checkbox from '@material-ui/core/Checkbox';
 import { ThemeProvider } from '@material-ui/styles';
-import getTheme from '../Color/MatUIColor';
+import getTheme from '../Theme/MatUITheme';
 import TaskFollowSelect from '../Select/TaskFollowSelect';
 import './taskFollow.scss';
-
-
-
 
 class Taskfollow extends React.Component {
     constructor(props) {
@@ -25,7 +22,6 @@ class Taskfollow extends React.Component {
             checked: newState,
         });
     }
-
 
     render() {
         const { theme, checked } = this.state;

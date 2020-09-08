@@ -44,6 +44,10 @@ class Modal extends Component {
 
     render() {
         const { hide, visibleStatus } = this.state;
+        let className="MainComponents";
+        if(!hide){
+            className +=" Component--acitve";
+        }
 
         return (
             <Draggable

@@ -7,15 +7,6 @@
     flex-wrap: wrap; 
     box-sizing: border-box;
     //border:solid 1px;
-    
-
-    &__checkbox{
-      
-    }
-
-    &__text{
-       
-    }
 
     &__select{
         flex:1;
@@ -23,23 +14,10 @@
         padding-left:3%;
         font-weight: bold;
 
-        &__input{
-          
-          
-        }
-
-        &:hover{    
-           
+        &:hover{         
             transition: none;
         } 
     }
 
-    .MuiInput-underline{
-    //    &:before{
-    //        border-bottom: 0;
-    //    }
-    //    &::after{
-    //     border-bottom: 0;
-    // }
-    }
+
 }

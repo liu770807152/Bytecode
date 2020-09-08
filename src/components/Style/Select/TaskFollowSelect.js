@@ -1,8 +1,7 @@
-import React, { Component } from 'react';
-import { makeStyles, ThemeProvider } from '@material-ui/core/styles';
+import React from 'react';
+import {ThemeProvider } from '@material-ui/core/styles';
 import MenuItem from '@material-ui/core/MenuItem';
 import Select from '@material-ui/core/Select';
-import Text from '../Text'
 import './TaskFollow.scss';
 
 

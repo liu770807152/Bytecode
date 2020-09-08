@@ -14,12 +14,14 @@
 
 .MainComponents{
     visibility: hidden;  
+    opacity: 0;
     width:100%;
     
 }
 
 .Component--acitve{
     visibility: visible;
+    opacity: 1;
 }
 
 
