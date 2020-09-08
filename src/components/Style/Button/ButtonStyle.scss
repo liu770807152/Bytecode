@@ -9,6 +9,11 @@
     border-radius: 3px;
     color:white;
     font-size:small;
+
+    &:hover{
+        opacity: 0.8;
+        cursor: pointer;
+    }
 }
 
 .outlinedButton{
@@ -21,4 +26,10 @@
     color:$tertiary-color;
     font-size:small;
     border:solid 1px $tertiary-color;
+
+    &:hover{
+        background-color:rgba($color: $tertiary-color, $alpha: 0.1);
+        
+        cursor: pointer;
+    }
 }

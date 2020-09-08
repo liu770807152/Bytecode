@@ -1,0 +1,45 @@
+@import'../../../style/variable.scss';
+
+.taskFollow{
+    display:inline-flex;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    flex-wrap: wrap; 
+    box-sizing: border-box;
+    //border:solid 1px;
+    
+
+    &__checkbox{
+      
+    }
+
+    &__text{
+       
+    }
+
+    &__select{
+        flex:1;
+        padding-top:1.2%;
+        padding-left:3%;
+        font-weight: bold;
+
+        &__input{
+          
+          
+        }
+
+        &:hover{    
+           
+            transition: none;
+        } 
+    }
+
+    .MuiInput-underline{
+    //    &:before{
+    //        border-bottom: 0;
+    //    }
+    //    &::after{
+    //     border-bottom: 0;
+    // }
+    }
+}

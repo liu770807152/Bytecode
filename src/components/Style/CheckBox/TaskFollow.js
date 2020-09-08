@@ -2,6 +2,8 @@ import React from 'react';
 import Checkbox from '@material-ui/core/Checkbox';
 import { ThemeProvider } from '@material-ui/styles';
 import getTheme from '../Color/MatUIColor';
+import TaskFollowSelect from '../Select/TaskFollowSelect';
+import './taskFollow.scss';
 
 
 
@@ -18,24 +20,37 @@ class Taskfollow extends React.Component {
     }
 
     handlecheckbox(e) {
+        let newState = !this.state.checked
         this.setState({
-            checked: true,
+            checked: newState,
         });
     }
 
 
     render() {
+        const { theme, checked } = this.state;
         return (
             <div className='taskFollow'>
-                <ThemeProvider theme={this.state.theme}>
-                <Checkbox
-                    checked={this.checked}
-                    onChange={this.handlecheckbox}
-                    color={'primary'}
-                    inputProps={{ 'aria-label': 'primary checkbox' }}
-                />
-                </ThemeProvider>
-                <span>Create a task to follow up</span>
+                <div className='taskFollow__checkbox'>
+                    <ThemeProvider theme={theme}>
+                        <Checkbox
+                            checked={this.checked}
+                            onChange={this.handlecheckbox}
+                            color={'primary'}
+                            inputProps={{ 'aria-label': 'primary checkbox' }}
+                        />
+                    </ThemeProvider>
+                </div>
+                <div className='taskFollow__text'>
+                    <span>Create a task to follow up</span>
+                </div>
+                {checked ?
+                    <div className='taskFollow__select'>
+                        <TaskFollowSelect theme={this.state.theme} />
+                    </div>
+                    :
+                    <div />
+                }
             </div>
         )
     }
