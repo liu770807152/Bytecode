@@ -1,5 +1,5 @@
 import React from 'react';
-import {ThemeProvider } from '@material-ui/core/styles';
+import { ThemeProvider } from '@material-ui/core/styles';
 import MenuItem from '@material-ui/core/MenuItem';
 import Select from '@material-ui/core/Select';
 import getDate from '../../services/DateCalculator';
@@ -13,11 +13,11 @@ class TaskFollowSelect extends React.Component {
     constructor(props) {
         super(props);
         const selectItems = [
-            { key: 'Tomorrow ', value: 1,date:''},
-            { key: 'in 2 business days ', value: 2,date:'' },
-            { key: 'in 3 business days ', value: 3,date:'' },
-            { key: 'in 1 week ', value: 7,date:'' },
-            { key: 'in 2 weeks ', value: 14,date:'' },
+            { key: 'Tomorrow ', value: 1, date: '' },
+            { key: 'in 2 business days ', value: 2, date: '' },
+            { key: 'in 3 business days ', value: 3, date: '' },
+            { key: 'in 1 week ', value: 7, date: '' },
+            { key: 'in 2 weeks ', value: 14, date: '' },
             { key: 'in 1 month ', value: 30 },
         ];
 
@@ -57,8 +57,9 @@ class TaskFollowSelect extends React.Component {
                         className={"taskFollow__select__input"}
                     >
                         {selectItems.map((item) => (
-                               
-                        <MenuItem value={item.value}>{item.key + getDate(item.value)}</MenuItem>
+                            <MenuItem value={item.value}>
+                                {item.key + "(" + getDate(item.value) + ")"}
+                            </MenuItem>
                         ))}
                     </Select>
                 </ThemeProvider>
