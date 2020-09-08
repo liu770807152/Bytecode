@@ -32,6 +32,7 @@ function getTheme() {
           border: 0,
           color:primaryColor,
           fontWeight:"bold",
+          fontSize:"small",
           "&:focus": {
             backgroundColor: 'transparent',      
           },  
