@@ -2,6 +2,7 @@ import React from 'react';
 import Checkbox from '@material-ui/core/Checkbox';
 import { ThemeProvider } from '@material-ui/styles';
 import getTheme from '../Theme/MatUITheme';
+import getDate from '../../services/DateCalculator'
 import TaskFollowSelect from '../Select/TaskFollowSelect';
 import './taskFollow.scss';
 
@@ -21,6 +22,7 @@ class Taskfollow extends React.Component {
         this.setState({
             checked: newState,
         });
+        getDate();
     }
 
     render() {
