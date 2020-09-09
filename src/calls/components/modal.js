@@ -7,6 +7,11 @@ import DialogTitle from '@material-ui/core/DialogTitle';
 import Paper from '@material-ui/core/Paper';
 import Draggable from 'react-draggable';
 import { withStyles } from '@material-ui/styles';
+import Contacted from './contacted';
+import CallOutcome from './selection';
+import Calendar from './calendar';
+import TimePicker from './time';
+import CloseIcon from '../../img/closeIcon.svg';
 
 function PaperComponent(props) {
   return (
@@ -82,12 +87,47 @@ function DraggableDialog({ classes }) {
       >
         <DialogTitle style={{ cursor: 'move' }} id="draggable-dialog-title">
           Log Call
+          <img
+            className="closeIcon"
+            src={CloseIcon}
+            alt=""
+            onClick={handleClose}
+          />
         </DialogTitle>
-        <DialogContent dividers></DialogContent>
+        <DialogContent dividers>
+          <ul className="callsNavBar">
+            <li>Contacted</li>
+            <li>Call outcome</li>
+            <li>Date</li>
+            <li>Time</li>
+          </ul>
+          <ul className="callsNavItems">
+            <li>
+              <Contacted />
+            </li>
+            <li>
+              <CallOutcome />
+            </li>
+            <li>
+              <Calendar />
+            </li>
+            <li>
+              <TimePicker />
+            </li>
+          </ul>
+          <hr />
+          <textarea
+            name="textEditor"
+            id="textEditor"
+            className="textArea"
+            cols="92"
+            rows="12"
+          ></textarea>
+          U B I 组件
+        </DialogContent>
+
         <DialogActions>
-          <LogActivityBtn variant="outlined" onClick={handleClose}>
-            Log Activity
-          </LogActivityBtn>
+          <LogActivityBtn variant="outlined">Log Activity</LogActivityBtn>
         </DialogActions>
       </Dialog>
     </div>
