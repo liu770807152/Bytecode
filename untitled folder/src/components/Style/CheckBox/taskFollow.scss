@@ -3,21 +3,13 @@
 .taskFollow{
     display:inline-flex;
     align-items: center !important;
+    justify-content: flex-start !important;
     flex-wrap: wrap; 
     box-sizing: border-box;
-    // -webkit-box-flex:1;
-    // -webkit-box-align: center;
-    // -webkit-box-pack: start;
     //border:solid 1px;
-    // max-height: 42px;
 
-    &__checkbox{
-        display: flex;
-        align-items: center;
-    
-        &__text{
-            font-size: small;
-        }
+    &__text{
+        font-size: small;
     }
 
     &__select{

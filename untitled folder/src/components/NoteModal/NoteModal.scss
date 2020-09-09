@@ -1,0 +1,44 @@
+.new-note__header {
+	background-color: #506F90;
+	color: white;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 10px;
+}
+
+.new-note-text-input {
+	padding: 20px;
+	border-bottom: 1px solid lightgrey;
+}
+
+
+.note-container-footer {
+	display: inline-flex;
+	align-items: center;
+	padding: 10px 20px;
+	
+
+	button {
+		background-color: #FF7A5A;
+		border: none;
+		color: white;
+		outline: none;
+		padding: 10px;
+		border-radius: 3px;
+		font-weight: bold;
+	}
+
+	input {
+		width: 14px;
+		height: 14px;
+		margin-left: 20px;
+		margin-right: 5px;
+		border-color: #00a4bd;
+		color: #33475B;
+	}
+
+	p {
+		font-size: 14px;
+		color: #33475B;
+	}
+}

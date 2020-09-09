@@ -2,7 +2,7 @@ import React from 'react';
 import Checkbox from '@material-ui/core/Checkbox';
 import { ThemeProvider } from '@material-ui/styles';
 import getTheme from '../Theme/MatUITheme';
-
+import getDate from '../../services/DateCalculator'
 import TaskFollowSelect from '../Select/TaskFollowSelect';
 import './taskFollow.scss';
 
@@ -22,7 +22,7 @@ class Taskfollow extends React.Component {
         this.setState({
             checked: newState,
         });
-        
+        getDate();
     }
 
     render() {
@@ -38,9 +38,9 @@ class Taskfollow extends React.Component {
                             inputProps={{ 'aria-label': 'primary checkbox' }}
                         />
                     </ThemeProvider>
-                    <div className='taskFollow__checkbox__text'>
-                    <span>Create a task to follow up</span>
                 </div>
+                <div className='taskFollow__text'>
+                    <span>Create a task to follow up</span>
                 </div>
                 {checked ?
                     <div className='taskFollow__select'>
