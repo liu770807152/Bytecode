@@ -5,10 +5,11 @@ import "./ButtonStyle.scss";
 
 
 const ContainedButton = ({
-    children
+    children,
+    className
 }) => {
     return (
-        <button className="containedButton">{children}</button>
+        <button className={"containedButton " + className}>{children}</button>
     )
 
 }

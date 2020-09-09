@@ -14,16 +14,17 @@ const EmailSendBar = ({
 }) => (
         <div className="emailSendBar">
             <div className="emailSendBar__send">
-                <ContainedButton>Send</ContainedButton>
+                <ContainedButton className="emailSendBar__send__button">
+                    Send
+                </ContainedButton>
             </div>
             <div className="emailSendBar__sendLater">
                 <OutlinedButton>Send Later</OutlinedButton>
             </div>
-            <div className="taskFollow">
-              <Taskfollow/>
+            <div className="emailSendBar__taskFollow">
+                <Taskfollow />
             </div>
         </div>
-
     )
 
 

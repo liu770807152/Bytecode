@@ -23,6 +23,9 @@ function getTheme() {
           "&::after":{
             borderBottom: "0",
           }
+        },
+        input:{
+          height: "25px"
         }
       },
       
@@ -30,6 +33,7 @@ function getTheme() {
         // Name of the rule
         select: {
           border: 0,
+          height: "25px",
           color:primaryColor,
           fontWeight:"bold",
           fontSize:"small",

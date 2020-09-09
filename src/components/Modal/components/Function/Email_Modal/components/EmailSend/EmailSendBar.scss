@@ -2,16 +2,31 @@
 
 
 .emailSendBar{
-    margin:3%;
-    display:flex;
+    display: flex;
+    justify-content: flex-start;
+    height:70px;
     // margin-top:0.1%;
     // margin-bottom: 1%;
+    //background-color:rgba($color: #e06a1a, $alpha: 0.5);
 
     &__send{
-        margin:auto 1.5%;
+        flex:1;
+        align-self: center;
+        margin-left: 1.5%;
+
+        &__button{
+            background-color: $tertiary-color;
+        }
     }
 
     &__sendLater{
-        margin:auto 1.5%;
+        flex:1;
+        align-self: center;
+        margin-left: 1.5%;
+    }
+
+    &__taskFollow{
+        flex:7;
     }
 }
+
