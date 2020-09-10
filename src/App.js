@@ -1,12 +1,12 @@
 import React from 'react';
-import LoginForm from './pages/LoginForm/login-index';
+
 import './pages/LoginForm/Style/style.scss';
+import EnhancedTable from './table/table';
+
 
 function App() {
   return (
-    <div>
-      <LoginForm />
-    </div>
+    <EnhancedTable />
   );
 }
 
