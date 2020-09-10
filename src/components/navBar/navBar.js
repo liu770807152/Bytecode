@@ -1,9 +1,9 @@
 import React from 'react';
-import '../navBar/navBar.scss';
-import Logo from '../navBar/logo.png';
+import '../Navbar/Navbar.scss';
+import Logo from './logo.png';
 import { FiHome } from "react-icons/fi";
 
-const navBar = () => (
+const Navbar = () => (
     <div className="navbar">
         <img className="logo" src={Logo} alt="Logo" />
         <div className = "navbar-buttons">
@@ -15,4 +15,4 @@ const navBar = () => (
     </div>
 );
 
-export default navBar;
+export default Navbar;

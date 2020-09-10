@@ -1,17 +1,19 @@
-import React from './node_modules/react';
-import './app.scss';
-import navBar from '../navBar/navBar';
-import companyBasic from '../companyBasic/companyBasic';
+import React from 'react';
+import './App.scss';
+import Navbar from '../Navbar/Navbar';
+import Main from './Main';
 
-function app() {
+
+
+function App() {
   return (
     <div>
       <header>
-        <navBar />
+        <Navbar />
       </header>
-      <companyBasic />
+      <Main />
     </div>
   )
 };
 
-export default app;
+export default App;
