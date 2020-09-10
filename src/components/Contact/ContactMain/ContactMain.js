@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import Modal from '../../../Modal/Modal';
-import Contactbasic from '../../Contactbasic';
-import './Main.scss';
+import Modal from '../../Modal';
+import Contactbasic from './Contactbasic';
+import './ContactMain.scss';
 
-class Main extends Component {
+class ContactMain extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -62,4 +62,4 @@ class Main extends Component {
 }
 
 
-export default Main;
+export default ContactMain;

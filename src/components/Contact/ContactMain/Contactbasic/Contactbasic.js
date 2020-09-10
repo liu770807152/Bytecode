@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
-import "../Contactbasic/Contactbasic.scss";
-import IconNote from "../../img/Contact/note.png";
-import IconMail from "../../img/Contact/mail.png";
-import IconCall from "../../img/Contact/call.png";
-import IconLog from "../../img/Contact/log.png";
-import IconTask from "../../img/Contact/task.png";
-import IconMeeting from "../../img/Contact/meeting.png";
-import ContactHeader from "./components/ContactHeader/"
+import "./Contactbasic.scss";
+import IconNote from "../../../../img/Contact/._note.png";
+import IconMail from "../../../../img/Contact/mail.png";
+import IconCall from "../../../../img/Contact/call.png";
+import IconLog from "../../../../img/Contact/log.png";
+import IconTask from "../../../../img/Contact/task.png";
+import IconMeeting from "../../../../img/Contact/meeting.png";
+import ContactHeader from "./components/ContactHeader"
 import ActivityBar from "./components/ActivityBar/ActivityBar"
-import NoteModal from "../Modal/components/Function/Note_Modal"
-import EmailModal from "../Modal/components/Function/Email_Modal"
+import NoteModal from "../../../Modal/components/Function/Email_Modal"
+import EmailModal from "../../../Modal/components/Function/Email_Modal"
 
 
 

@@ -1,6 +1,6 @@
 import React from 'react';
-import NavBar from '../navbar/NavBar';
-import '../companylist/companylist.scss';
+import NavBar from '../../Navbar';
+import './CompanyList.scss';
 
 
 const CompanyList = () => (

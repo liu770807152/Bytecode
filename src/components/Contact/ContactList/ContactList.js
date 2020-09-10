@@ -1,7 +1,7 @@
-import React from './node_modules/react';
-import "./Contactlist.scss";
-import NavBar from '../navbar/NavBar';
-import { NavLink } from './node_modules/react-router-dom';
+import React from 'react';
+import "./ContactList.scss";
+import NavBar from '../../Navbar';
+import { NavLink } from 'react-router-dom';
 
 
 const ContactList = () => (
