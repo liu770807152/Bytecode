@@ -1,28 +1,22 @@
 import React from 'react';
-// import PasswordView from './FormStyle/showPassword/showPassword';
-// import LoginBtn from './FormStyle/loginBtn/LoginBtn';
-// import CheckBox from './FormStyle/checkBox/CheckBox';
-// import {
-//   SignUp,
-//   LinkBtn,
-//   Form,
-//   Label,
-//   EmailInput,
-//   PwdInput,
-//   RememberMe,
-// } from './FormStyle/login';
-
-import './Style/style.scss';
+import { Link } from 'react-router-dom';
 
 const initialState = {
   emailAddr: '',
   password: '',
   emailErrMsg: '',
   passwordErrMsg: '',
+  hidden: true,
 };
 
-class SignIn extends React.Component {
+class Form extends React.Component {
   state = initialState;
+  //Toggle Password -> Show or Hide
+  toggleShow = this.toggleShow.bind(this);
+  toggleShow() {
+    this.setState({ hidden: !this.state.hidden });
+  }
+
   handleChange = (event) => {
     const isCheckbox = event.target.type === 'checkbox';
     this.setState({
@@ -35,13 +29,15 @@ class SignIn extends React.Component {
   validate = () => {
     let emailErrMsg = ' ';
     let passwordErrMsg = ' ';
+
     if (!this.state.password) {
-      passwordErrMsg = 'Password cannot be blank';
+      passwordErrMsg = 'Password cannot be blank !';
     }
 
     if (!this.state.email.includes('.com')) {
-      emailErrMsg = 'Invalid email address';
+      emailErrMsg = 'Invalid email address !';
     }
+
     if (emailErrMsg || passwordErrMsg) {
       this.setState({ emailErrMsg, passwordErrMsg });
       return false;
@@ -61,16 +57,14 @@ class SignIn extends React.Component {
   render() {
     return (
       <div>
-        <p className="signUpPara">
-          Don't have an account? &nbsp;
-          <a className="linkBtn" href="#">
-            Sign up
-          </a>
-        </p>
+        <Link to="/call">hello world</Link>
         <form className="loginForm" onSubmit={this.handleSubmit}>
-          <label className="laBel">Email address</label>
+          <label htmlFor="email" className="laBel">
+            Email address
+          </label>
           <input
             className="emailInput"
+            id="email"
             placeholder="Enter your email address..."
             name="email"
             type="email"
@@ -79,13 +73,17 @@ class SignIn extends React.Component {
           />
           <div className="errMsg">{this.state.emailErrMsg}</div>
           <br />
-
-          <label className="laBel">Password</label>
+          <label htmlFor="password" className="laBel">
+            Password
+          </label>
           <br />
-          <span className="pwdReveal">Show password</span>
+          <span onClick={this.toggleShow} className="pwdReveal">
+            Show/Hide password
+          </span>
           <input
             className="pwdInput"
-            type="password"
+            id="password"
+            type={this.state.hidden ? 'password' : 'text'}
             name="password"
             placeholder="Enter your password..."
             value={this.state.password}
@@ -97,8 +95,10 @@ class SignIn extends React.Component {
           <a className="linkBtn" href="#">
             Forgot my password
           </a>
-          <input className="checkBox" type="checkbox" />
-          <span className="rememberMe">Remember Me</span>
+          <input id="rememberMe" className="checkBox" type="checkbox" />
+          <label htmlFor="rememberMe" className="rmbMe">
+            Remember Me
+          </label>
           <br />
           <button className="loginBtn" type="submit">
             Log in
@@ -108,9 +108,4 @@ class SignIn extends React.Component {
     );
   }
 }
-
-// const Formm = () => {
-//   return <div></div>;
-// };
-
-export default SignIn;
+export default Form;

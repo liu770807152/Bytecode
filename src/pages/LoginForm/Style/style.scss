@@ -3,9 +3,9 @@ $shownColor: #0091ae;
 $myFont: 'Varela Round', sans-serif;
 
 .byteCRMLogo {
-  width: 23em;
+  width: 27em;
   height: 9em;
-  margin-left: 36%;
+  margin-left: 34%;
   margin-top: 5%;
 }
 
@@ -32,14 +32,14 @@ $myFont: 'Varela Round', sans-serif;
   position: fixed;
 }
 
-.linkBtn :hover {
+.linkBtn:hover {
   color: $hoverColor;
   text-decoration: underline;
   font-weight: 600;
 }
 
 .loginForm {
-  margin-top: 5%;
+  margin-top: 0;
   margin-left: 37%;
 }
 
@@ -83,10 +83,11 @@ $myFont: 'Varela Round', sans-serif;
 .errMsg {
   color: red;
   font: {
-    size: 10;
+    size: 13px;
     family: $myFont;
     weight: 600;
   }
+  margin-top: -2%;
 }
 
 .pwdReveal {
@@ -99,7 +100,7 @@ $myFont: 'Varela Round', sans-serif;
   color: $shownColor;
 }
 
-.pwdReveal :hover {
+.pwdReveal:hover {
   color: $hoverColor;
   text-decoration: underline;
   font-weight: 600;
@@ -139,13 +140,18 @@ $myFont: 'Varela Round', sans-serif;
   }
 }
 
-.rememberMe {
+.rmbMe {
   font: {
     family: $myFont;
     size: 16px;
   }
-  color: $hoverColor;
+  color: $shownColor;
   margin-left: 1%;
+}
+
+.rmbMe:hover {
+  cursor: pointer;
+  color: $hoverColor;
 }
 
 .loginBtn {
