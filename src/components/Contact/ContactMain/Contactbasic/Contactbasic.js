@@ -8,7 +8,7 @@ import IconTask from "../../../../img/Contact/task.png";
 import IconMeeting from "../../../../img/Contact/meeting.png";
 import ContactHeader from "./components/ContactHeader"
 import ActivityBar from "./components/ActivityBar/ActivityBar"
-import NoteModal from "../../../Modal/components/Function/Email_Modal"
+import NoteModal from "../../../Modal/components/Function/Note_Modal"
 import EmailModal from "../../../Modal/components/Function/Email_Modal"
 
 
@@ -20,9 +20,9 @@ class Contactbasic extends Component {
             { key: 'Note', value: 'Note', src: IconNote, modal: (<NoteModal />) },
             { key: 'Email', value: 'Email', src: IconMail, modal: (<EmailModal />) },
             { key: 'Call', value: 'Call', src: IconCall, modal: "" },
-            { key: 'Log', value: 'Log', src: IconLog, modal: (<EmailModal />) },
-            { key: 'Task', value: 'Task', src: IconTask, modal: (<EmailModal />) },
-            { key: 'Meeting', value: 'Meeting', src: IconMeeting, modal: (<EmailModal />) },
+            { key: 'Log', value: 'Log', src: IconLog, modal: "" },
+            { key: 'Task', value: 'Task', src: IconTask, modal: "" },
+            { key: 'Meeting', value: 'Meeting', src: IconMeeting, modal: "" },
         ];
         this.state = {
             navItems,
