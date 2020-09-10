@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import "../Companybasic/Companybasic.scss";
+import "../CompanyBasic/CompanyBasic.scss";
 import IconNote from "../../img/Company/note.svg";
 import IconMail from "../../img/Company/mail.svg";
 import IconCall from "../../img/Company/call.svg";
@@ -14,7 +14,7 @@ import EmailModal from "../Modal/components/Function/Email_Modal"
 
 
 
-class Companybasic extends Component {
+class CompanyBasic extends Component {
     constructor(props) {
         super(props);
         const navItems = [
@@ -60,4 +60,4 @@ class Companybasic extends Component {
     }
 }
 
-export default Companybasic;
+export default CompanyBasic;

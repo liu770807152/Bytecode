@@ -1,7 +1,9 @@
 import React from 'react';
 import './App.scss';
 import Navbar from '../Navbar/Navbar';
-import Companybasic from '../Companybasic/Companybasic';
+import Main from './Main';
+
+
 
 function App() {
   return (
@@ -9,7 +11,7 @@ function App() {
       <header>
         <Navbar />
       </header>
-      <Companybasic />
+      <Main />
     </div>
   )
 };

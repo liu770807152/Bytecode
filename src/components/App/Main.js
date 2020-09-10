@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Modal from '../Modal';
-import Companybasic from '../Companybasic';
+import CompanyBasic from '../CompanyBasic';
 import './Main.scss';
 
 class Main extends Component {
@@ -36,7 +36,7 @@ class Main extends Component {
         const {visible,currentModal} = this.state
         return (
             <div className="Main">
-                <Companybasic openModal = {this.openModal}
+                <CompanyBasic openModal = {this.openModal}
                 />
                 <div className="Function">
                     <p>function component</p>
