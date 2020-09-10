@@ -1,21 +1,33 @@
 import React from 'react';
 import { faUserCircle } from "@fortawesome/free-solid-svg-icons";
+import { faPen } from "@fortawesome/free-solid-svg-icons";
+import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './CommentCard.scss';
-
-// const CommentCard = (props) => (
-// 	<div className="comment-card">
-// 		{props.author}
-// 		{props.createdDate}
-// 		{props.content}
-// 	</div>
-// )
+import Tooltip from '@material-ui/core/Tooltip';
+import IconButton from '@material-ui/core/IconButton';
+import Button from '@material-ui/core/Button';
 
 class CommentCard extends React.Component {
+  constructor() {
+    super();
+    this.state = {}
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(){}
 
   render () {
     return(
       <div className="comment-container">
+        <div className="comment-actions">
+          <Tooltip title="Edit" placement="top" arrow>
+            <button className="comment-card-action-button"><FontAwesomeIcon icon={faPen} /></button>
+          </Tooltip>
+          <Tooltip title="Delete" placement="top" arrow>
+            <button className="comment-card-action-button"><FontAwesomeIcon icon={faTrashAlt} /></button>
+          </Tooltip>
+        </div>
 				<div className="comment-container-header">
 					<div className="comment-container-header__left">
 						<FontAwesomeIcon icon={faUserCircle} />
@@ -28,9 +40,6 @@ class CommentCard extends React.Component {
 				<div className="comment-detail">
           <p> { this.props.content }</p>
 				</div>
-        {/* <div className="comment-footer">
-          <button href="#" className="comment-footer-delete" onClick={this.deleteComment}>Delete Comment</button>
-        </div> */}
 			</div>
     );
   }

@@ -12,10 +12,22 @@
 	border: transparent;
 	outline: transparent;
 	resize: none;
-	width: 500px;
+	width: 90%;
 	height: 50px;
+	font-family: Arial, Helvetica, sans-serif
 }
 
 .comment-form-controls {
 	padding: 10px;
+}
+
+.comment-form-button{
+	outline: none;
+	border: none;
+	&__save {
+		background-color: #425B76;
+		color: white;
+		padding: 5px 15px;
+		border-radius: 3px;
+	}
 }

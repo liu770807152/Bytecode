@@ -2,9 +2,31 @@
 	background-color: #FEF8F0;
 	margin: 15px 0px;
 	padding: 10px 20px;
-	font-size: 14px;
 	border: 1px solid rgba(0,0,0,0.17);
 	color: #33475B;
+	position: relative;
+}
+
+.comment-container:hover 
+.comment-actions {
+  opacity: 1;
+}
+
+.comment-actions {
+	position: absolute;
+	top: -25px;
+	right: 10px;
+	opacity: 0;
+	
+}
+
+.comment-card-action-button {
+	border: none;
+	color: white;
+	background-color: #425B76;
+	font-size: 12px;
+	padding: 10px;
+	outline: none;
 }
 
 .comment-container-header {
@@ -17,6 +39,11 @@
 	color: lightgrey;
 	display: inline-flex;
 	align-items: center;
+}
+
+.note__header-right {
+	font-size: 12px;
+	margin-top: 14px;
 }
 
 .comment-detail {

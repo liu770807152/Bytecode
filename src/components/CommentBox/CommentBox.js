@@ -14,12 +14,11 @@ class CommentBox extends React.Component {
     super();
     
     this.state = {
+      showAccordion: true,
       showComments: false,
       showCommentForm: false,
       comments: [
         //{id: 1, author: "Joe Doe", content: "This is my first comment on this note", createdTimeStamp: "Aug 28, 2020 at 12:08 AM GMT+10"}
-        // firstname="Joe"
-        // lastname="Doe"
       ]
     };
     this.handleShowCommentFormClick = this.handleShowCommentFormClick.bind(this);
@@ -39,7 +38,11 @@ class CommentBox extends React.Component {
       content,
       createdTimeStamp
     };
-    this.setState({ comments: this.state.comments.concat([comment]) }); 
+    this.setState({ 
+      comments: this.state.comments.concat([comment]),
+      showComments: true,
+      showCommentForm: false
+    }); 
   }
   
   handleClick() {
@@ -80,17 +83,18 @@ class CommentBox extends React.Component {
     
     return(
       <div>
-        <div className="comment-box-top">
-          <a 
-            onClick={this.handleClick.bind(this)}
-            className="accordion-label"
-          >
-            {buttonText} {this.getCommentsTitle(comments.length)} 
-          </a>
-          {commentNodes}
-        </div>
-        <div className={this.state.showCommentForm ? "accordion-collapse" : "accordion-collapse accordion-close"}>
-          <CommentForm addComment={this.addComment.bind(this)}/>
+          <div className="comment-box-top">
+            <a 
+              onClick={this.handleClick.bind(this)}
+              className="accordion-label"
+            >
+              {buttonText} {this.getCommentsTitle(comments.length)} 
+            </a>
+            {commentNodes}
+          </div>
+          
+        <div>
+          {this.state.showCommentForm ? <CommentForm addComment={this.addComment.bind(this)}/> : null}
         </div>
         
         <div className="add-comment-container">
