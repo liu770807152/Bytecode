@@ -8,9 +8,10 @@
 .navbar-buttons {
     display: flex;
     margin: 5px;
+    list-style-type: none;
 }
 
-.navbar-contacts, .navbar-companies, .navbar-login {
+.navbar-contacts, .navbar-companies, .navbar-logout {
     margin: 5px;
     width: 80px;
     border-radius: 5px;

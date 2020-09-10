@@ -1,19 +1,12 @@
 import React from 'react';
 import './App.scss';
-import Navbar from '../Navbar/Navbar';
-import Main from './Main';
-
+import Routes from '../Routes/Routes';
 
 
 function App() {
   return (
     <div>
-      <header>
-        <Navbar />
-      </header>
-      
-        <Main/>
-      
+      <Routes />
     </div>
   )
 };

@@ -10,7 +10,7 @@ class Modal extends Component {
         this.state = {
             fullScreen: false,
             defaultXaxis: 500,
-            defaultYaxis: 100,
+            defaultYaxis: 200,
             hide: false,
 
         };
@@ -43,11 +43,7 @@ class Modal extends Component {
 
 
     render() {
-        const { hide, visibleStatus } = this.state;
-        let className="MainComponents";
-        if(!hide){
-            className +=" Component--acitve";
-        }
+        const { hide } = this.state;
 
         return (
             <Draggable
@@ -72,7 +68,7 @@ class Modal extends Component {
                         }
                     </div>
                     :
-                    <div className ="Modal"/>
+                    <div />
                 }
             </Draggable>
 

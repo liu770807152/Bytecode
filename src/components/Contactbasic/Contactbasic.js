@@ -27,7 +27,7 @@ class Contactbasic extends Component {
         this.state = {
             navItems,
             currentModal: navItems[0],
-            
+            name: "email",
         }
         this.onNavItemClick = this.onNavItemClick.bind(this);
     }
@@ -44,14 +44,14 @@ class Contactbasic extends Component {
         const { navItems, currentModal } = this.state;
         return (
             <div className="contact_information">
-                <ContactHeader />
-
-                <ActivityBar
-                    navItems={navItems}
-                    currentWindow={currentModal}
-                    onNavItemClick={this.onNavItemClick}
-                />
-
+                    <ContactHeader />
+                    <div className="activity__list">
+                        <ActivityBar
+                            navItems={navItems}
+                            currentWindow={currentModal}
+                            onNavItemClick={this.onNavItemClick}
+                        />
+                    </div>
                 <div className="about_contact">
                     <h3> About this contact</h3>
                     <div className="firstname_box">
