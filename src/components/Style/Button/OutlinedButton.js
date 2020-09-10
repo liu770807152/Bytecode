@@ -6,10 +6,11 @@ import "./ButtonStyle.scss";
 
 
 const OutLinedButton = ({
-    children
+    children,
+    className
 }) => {
     return (
-        <button className="outlinedButton">{children}</button>
+        <button className={`outlinedButton ${className}`}>{children}</button>
     )
 
 }

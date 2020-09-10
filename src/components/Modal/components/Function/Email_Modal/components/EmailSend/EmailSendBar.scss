@@ -23,6 +23,16 @@
         flex:1;
         align-self: center;
         margin-left: 1.5%;
+
+        &__button{
+            border:solid 1px $tertiary-color;
+            color:$tertiary-color;
+
+            &:hover{
+                background-color:rgba($color: $tertiary-color, $alpha: 0.1); 
+                cursor: pointer;
+            }
+        }
     }
 
     &__taskFollow{

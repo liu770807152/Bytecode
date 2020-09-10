@@ -19,7 +19,9 @@ const EmailSendBar = ({
                 </ContainedButton>
             </div>
             <div className="emailSendBar__sendLater">
-                <OutlinedButton>Send Later</OutlinedButton>
+                <OutlinedButton className='emailSendBar__sendLater__button'>
+                    Send Later
+                </OutlinedButton>
             </div>
             <div className="emailSendBar__taskFollow">
                 <Taskfollow />
