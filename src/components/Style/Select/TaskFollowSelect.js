@@ -53,7 +53,7 @@ class TaskFollowSelect extends React.Component {
                     >
                         {selectItems.map((item) => (
                             <MenuItem value={item.value}>
-                                {item.key + "(" + getDate(item.value) + ")"}
+                                {item.key + `(${getDate(item.value)})`}
                             </MenuItem>
                         ))}
                     </Select>
