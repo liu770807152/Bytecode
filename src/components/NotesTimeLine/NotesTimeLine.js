@@ -4,6 +4,9 @@ import NoteModal from '../NoteModal';
 import NoteCard from '../NoteCard';
 import Modal from 'react-modal';
 import Draggable from 'react-draggable';
+import NewComment from "../NoteCard/components/NewComment";
+import CommentBox from "../CommentBox";
+
 
 class NotesTimeLine extends React.Component {
 	constructor () {

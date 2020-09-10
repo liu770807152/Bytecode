@@ -1,16 +1,21 @@
-.new-comment-container {
+.comment-form-container {
 	font-family: Arial, Helvetica, sans-serif;
 	box-shadow: 0 1px 3px 0 rgba(0,0,0,0.17);
 	background-color: #FEF8F0;
 	padding: 10px;
 	margin: 10px 10px;
+	
 }
 
-.new-comment-input {
+.comment-form-input {
 	background: #FEF8F0;
+	border: transparent;
+	outline: transparent;
+	resize: none;
+	width: 500px;
+	height: 50px;
 }
 
-.new-comment-controls {
+.comment-form-controls {
 	padding: 10px;
 }
-
