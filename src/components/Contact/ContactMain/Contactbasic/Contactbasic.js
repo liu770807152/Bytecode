@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import "./Contactbasic.scss";
-import IconNote from "../../../../img/Contact/._note.png";
+import IconNote from "../../../../img/Contact/note.png";
 import IconMail from "../../../../img/Contact/mail.png";
 import IconCall from "../../../../img/Contact/call.png";
 import IconLog from "../../../../img/Contact/log.png";
